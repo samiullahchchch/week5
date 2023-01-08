@@ -1,25 +1,91 @@
 #include <iostream>
-#include <cmath>
-
 using namespace std;
-void lsgreater(int number1,int number2);
-
-
-main()
+void checking(float num1);
+void checking2(float num1);
+void checking3(float num1);
+void checking4(float num1);
+void checking5(float num1);
+ main()
 {
-  int num1,num2;
-  cout<<"enter the number "<<endl;
-  cin>>num1;
-  cout<<"enter the number "<<endl;
-  cin>>num2;
-  lsgreater(num1,num2); 
+  char code;
+  float price;
+  cout<<"Enter the price of vehicle"<<endl;
+  cin>>price;
+  cout<<"Enter the one  vehicle code feom these(M,E,S,V,T)"<<endl;
+  cin>>code;
+  
+  if (code == 'M')
+{
+  checking(price); 
+
+}
+
+ if (code == 'E')
+{
+  checking2(price); 
+
+}
+
+ if (code == 'S')
+{
+  checking3(price); 
+
+}
+
+ if (code == 'V')
+{
+  checking4(price); 
+
+}
+
+ if (code == 'T')
+{
+  checking5(price); 
 
 }
 
 
-void lsgreater(int number1,int number2)
+
+
+}
+
+ void checking(float num1)
 {
-   int result = max(number1,number2);
-  cout<<"The greater number is:::"<<result<<endl;
-   
+ float result1,result2;
+ result1 = num1 * 6/ 100;
+ result2 = result1 + num1;
+ cout<<"Now the price of vehicle is ::::"<<result2<<endl;
+}
+
+void checking2(float num1)
+{
+ float result1,result2;
+ result1 = num1 * 8/ 100;
+ result2 = result1 + num1;
+ cout<<"Now the price of vehicle is ::::"<<result2<<endl;
+}
+
+
+void checking3(float num1)
+{
+ float result1,result2;
+ result1 = num1 * 10/ 100;
+ result2 = result1 + num1;
+ cout<<"Now the price of vehicle is ::::"<<result2<<endl;
+}
+
+void checking4(float num1)
+{
+ float result1,result2;
+ result1 = num1 * 12/ 100;
+ result2 = result1 + num1;
+ cout<<"Now the price of vehicle is ::::"<<result2<<endl;
+}
+
+void checking5(float num1)
+{
+ float result1,result2;
+ result1 = num1 * 15/ 100;
+ result2 = result1 + num1;
+ cout<<"Now the price of vehicle is ::::"<<result2<<endl;
 }
